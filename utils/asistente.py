@@ -347,7 +347,7 @@ class AsistenteGUI:
 
     def _realizar_busqueda_google(self, query):
         try:
-            url = f"https://www.googleapis.com/customsearch/v1?q={query}&key=AIzaSyDXKVLGJXx5RkjNGEigwz4iQZlTZXnHcjk&cx=d65bfde367613475f"
+            url = f""#poner su propia apikey
             response = requests.get(url)
             results = response.json()
             if 'items' in results:
